@@ -99,18 +99,18 @@ namespace jamgph_ytdownloader
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            conn.Open();
-            SqlCommand cmd = new SqlCommand("SELECT status FROM ytcrawler WHERE Id = 1", conn);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            conn.Close();
-            string stat = $"{dt.Rows[0]["status"]}";
-            if(stat != "true")
-            {
-                MessageBox.Show("Something went wrong!");
-                this.Close();
-            }
+            //conn.Open();
+            //SqlCommand cmd = new SqlCommand("SELECT status FROM ytcrawler WHERE Id = 1", conn);
+            //SqlDataAdapter da = new SqlDataAdapter(cmd);
+            //DataTable dt = new DataTable();
+            //da.Fill(dt);
+            //conn.Close();
+            //string stat = $"{dt.Rows[0]["status"]}";
+            //if(stat != "true")
+            //{
+            //    MessageBox.Show("Something went wrong!");
+            //    this.Close();
+            //}
 
         }
 

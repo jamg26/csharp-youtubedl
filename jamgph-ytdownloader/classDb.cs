@@ -19,7 +19,8 @@ namespace youtube_crawler
             string dbServer = "sqlserverinstance.crxgtyhmldr1.ap-southeast-1.rds.amazonaws.com";
             string dbName = "jamg";
             string dbUser = "jamg";
-            SqlConnection conn = new SqlConnection("Data Source = " + dbServer + "; Initial Catalog = " + dbName + "; User ID=" + dbUser + ";Password=Jamuel26;");
+            SqlConnection conn = new SqlConnection("Data Source = DESKTOP-F9UVCQF\\SQLEXPRESS; Initial Catalog = " + dbName + "; Integrated Security=True");
+            //SqlConnection conn = new SqlConnection("Data Source = " + dbServer + "; Initial Catalog = " + dbName + "; User ID=" + dbUser + ";Password=Jamuel26;");
             //Menu mm = new Menu();
             //mm.dbServer.Text = dbServer;
             //mm.dbName.Text = dbName;
